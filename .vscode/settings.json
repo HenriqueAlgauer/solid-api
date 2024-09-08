@@ -1,0 +1,5 @@
+{
+  "prettier.enable": false,
+  "prettier.endOfLine": "lf",
+  "prettier.trailingComma": "none"
+}
