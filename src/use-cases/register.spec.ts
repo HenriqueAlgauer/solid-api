@@ -6,7 +6,7 @@ describe('Register Use Case', () => {
     it('should hash user password upon registration', async () => {
         const registerUseCase = new RegisterUseCase({
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            async findByEmail(_email) {
+            async findByEmail(email) {
                 return null
             },
 
