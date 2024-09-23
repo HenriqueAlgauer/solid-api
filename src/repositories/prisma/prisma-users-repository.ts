@@ -4,6 +4,11 @@ import { Prisma, User } from "@prisma/client"
 import { UsersRepository } from "../users-repository"
 
 export class PrismaUsersRepository implements UsersRepository {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    async findById(id: string): Promise<User | null> {
+        throw new Error('Method not implemented')
+    }
+
     async findByEmail(email: string): Promise<User | null> {
         const user = await prisma.user.findUnique({
             where: {
