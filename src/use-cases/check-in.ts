@@ -28,7 +28,7 @@ export class CheckInUseCase {
         const gym = await this.gymsRepository.findById(gymId)
 
         if (!gym) {
-            throw new ResourceNotFound
+            throw new ResourceNotFound()
         }
 
         const distance = getDistanceBetweenCoordinates(
