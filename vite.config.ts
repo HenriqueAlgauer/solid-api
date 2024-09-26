@@ -7,6 +7,10 @@ export default defineConfig({
         loose: true,
         root: './src'
     })],
+    test: {
+        environmentMatchGlobs: [['src/http/controllers/**', 'prisma']],
+        // environment: './prisma/vitest-environment-prisma/prisma-test-environment',
+    },
     resolve: {
         alias: [
             { find: "@/", replacement: resolve(__dirname, "./src") }
