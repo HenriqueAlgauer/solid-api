@@ -8,8 +8,8 @@ export default defineConfig({
         root: './src'
     })],
     test: {
-        environmentMatchGlobs: [['./src/http/controllers/**', 'prisma']],
-        environment: 'prisma/vitest-environment-prisma/prisma-test-environment.ts'
+        environmentMatchGlobs: [['src/http/controllers/**', 'prisma']],
+        // environment: 'prisma/vitest-environment-prisma/prisma-test-environment.ts'
     },
     resolve: {
         alias: [
