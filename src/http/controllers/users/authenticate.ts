@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { FastifyRequest, FastifyReply } from 'fastify'
-import { InvalidCredentials } from '../../use-cases/errors/invalid-credentials'
-import { makeAuthenticateUseCase } from '../../use-cases/factories/make-authenticate-use-case'
+import { InvalidCredentials } from '../../../use-cases/errors/invalid-credentials'
+import { makeAuthenticateUseCase } from '../../../use-cases/factories/make-authenticate-use-case'
 
 export async function authenticate(request: FastifyRequest, reply: FastifyReply) {
     const authenticateBodySchema = z.object({
